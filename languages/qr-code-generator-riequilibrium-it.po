@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: QR Code Generator for Posts/Pages\n"
+"POT-Creation-Date: 2020-11-05 14:21+0000\n"
+"PO-Revision-Date: 2020-11-05 14:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: qr-code-generator-widget.php\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.4.4; wp-5.2.3"
+
+#. Unique ID
+#: qr-code-generator-widget.php:37
+msgid "QR Code for this page"
+msgstr "QR Code di questa pagina"
+
+#: qr-code-generator-widget.php:103
+msgid "Download QR Code"
+msgstr "Scarica QR Code"
+
+#: qr-code-generator-widget.php:116
+msgid "Publish the post to show the QR Code"
+msgstr "Pubblica l’articolo per visualizzare il QR Code"
+
+#: qr-code-generator-widget.php:116
+msgid "Publish the page to show the QR Code"
+msgstr "Pubblica la pagina per visualizzare il QR Code"
+
+#. Name of the plugin
+msgid "QR Code Generator for Posts/Pages"
+msgstr "Generatore QR Code per Articoli/Pagine"
+
+#. Description of the plugin
+msgid ""
+"This plugin generates QR Codes automatically after you publish a Post/Page "
+"and it is visible in the Admin area. This QR Code links directly to the "
+"Post/Page you have just created."
+msgstr ""
+"Questo plugin genera QR Code automaticamente dopo la pubblicazione di un "
+"Articolo/Pagina ed è visibile nell'area Admin. Questo QR Code si collega "
+"direttamente all'Articolo/Pagina appena creato."
+
+#. URI of the plugin
+msgid "https://github.com/riequilibrium/qr-code-generator-for-posts-pages"
+msgstr "https://github.com/riequilibrium/qr-code-generator-for-posts-pages"
+
+#. Author of the plugin
+msgid "Riequilibrium Web Agency"
+msgstr "Riequilibrium Web Agency"
+
+#. Author URI of the plugin
+msgid "https://riequilibrium.com"
+msgstr "https://riequilibrium.com"
