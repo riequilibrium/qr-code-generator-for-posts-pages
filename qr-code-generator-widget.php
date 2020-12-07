@@ -14,11 +14,18 @@ License: GPLv3
  * Author: Simone Di Paolo
  * Company: Riequilibrium Web Agency
  * Contact: it@riequilibrium.com
- * Date: 2020-11-05
+ * Date: 2020-12-07
  * Description: Loads existing translations based on installation's language
  */
 function qr_code_generator_init(){
-    load_plugin_textdomain("qr-code-generator-riequilibrium", false, plugin_dir_url(dirname(__FILE__)) . "languages/");
+    $current_user = wp_get_current_user();
+    if(!($current_user instanceof WP_User))
+        return;
+    if(function_exists('get_user_locale'))
+        $language = get_user_locale($current_user);
+    else
+        $language = get_locale();
+    load_textdomain("qr-code-generator-riequilibrium", plugin_dir_path(__FILE__) . "/languages/" . $language . ".mo");
 }
 add_action("plugins_loaded", "qr_code_generator_init");
 
