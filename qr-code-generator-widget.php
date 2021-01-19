@@ -76,9 +76,11 @@ function qr_code_riequilibrium_html($post){
                     data: { type: "download", permalink: "<?php echo get_permalink(); ?>", postID: "<?php echo $post->ID; ?>" },
                     type: "POST",
                     success: function(){
-                        download_btn.setAttribute("href", "<?php echo plugin_dir_url(__FILE__) . 'tmp/qr-post-' . $post->ID . '.png'; ?>"); // Adds href attribute to hidden element linked to the temporary image
+                        download_btn.setAttribute("href", "<?php echo plugin_dir_url( __FILE__ ) . 'tmp/qr-post-' . $post->ID . '.png'; ?>"); // Adds href attribute to hidden element linked to the temporary image
                         download_btn.setAttribute("download", "qr-<?php echo $post->post_name; ?>.png"); // Adds download attribute to hidden element renaming it with the slug
                         download_btn.click(); // Clicks the hidden element to automatically download locally the QR Code
+                        download_btn.removeAttribute("href"); // Removes attribute href to hidden element
+                        download_btn.removeAttribute("download"); // Removes attribute download to hidden element
                         delete_qr(); // Calls delete function
                     },
                     error: function(e){
